@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lilly Wellness | Mobile Massage Services in West London</title>
+<style>
+    :root {
+        --cream: #f8f5ef;
+        --beige: #e7dccb;
+        --green: #6f8a6f;
+        --dark: #2f3a2f;
+        --white: #ffffff;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background: var(--cream);
+        color: var(--dark);
+        line-height: 1.6;
+    }
+    header {
+        background: linear-gradient(rgba(111,138,111,0.55), rgba(111,138,111,0.55)),
+                    url('header-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+    }
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+    header p {
+        max-width: 700px;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+    .btn {
+        display: inline-block;
+        margin-top: 25px;
+        background: #25D366;
+        color: white;
+        text-decoration: none;
+        padding: 14px 28px;
+        border-radius: 30px;
+        font-weight: bold;
+    }
+    section {
+        padding: 70px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: var(--green);
+    }
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .img-container {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .img-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+    .split-row {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+    .split-row.reverse {
+        flex-direction: row-reverse;
+    }
+    .split-row .split-img {
+        flex: 1 1 280px;
+        max-width: 320px;
+    }
+    .split-row .split-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        display: block;
+    }
+    .split-row .split-text {
+        flex: 1 1 280px;
+    }
+    .split-row .split-text h3 {
+        color: var(--green);
+        margin-bottom: 10px;
+    }
+    .notice-box {
+        background: var(--beige);
+        border-left: 4px solid var(--green);
+        padding: 20px 25px;
+        border-radius: 12px;
+        margin-top: 25px;
+    }
+    .notice-box p {
+        margin-bottom: 10px;
+    }
+    .notice-box p:last-child {
+        margin-bottom: 0;
+    }
+    @media(max-width:700px){
+        .split-row, .split-row.reverse {
+            flex-direction: column;
+            text-align: center;
+        }
+        .split-row .split-img {
+            max-width: 240px;
+            margin: 0 auto;
+        }
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    th {
+        background: var(--green);
+        color: white;
+    }
+    th, td {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+    }
+    .info-box {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        margin-top: 20px;
+    }
+    footer {
+        background: var(--green);
+        color: white;
+        text-align: center;
+        padding: 30px;
+    }
+    .whatsapp-section {
+        text-align: center;
+        background: var(--beige);
+    }
+    @media(max-width:768px){
+        header h1{
+            font-size:2.2rem;
+        }
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Lilly Wellness</h1>
+    <p>
+        Professional mobile massage services in West London.
+        Relax, recover, and restore your wellbeing from the comfort of your own home.
+    </p>
+    <a class="btn"
+       href="https://wa.me/447932060788?text=Hi%20Lilly,%20I'd%20like%20to%20enquire%20about%20a%20massage%20appointment."
+       target="_blank">
+       Book via WhatsApp
+    </a>
+</header>
+<section>
+    <h2>Our Services</h2>
+    <div class="split-row">
+        <div class="split-img">
+            <img src="massage.jpg" alt="Massage therapy session">
+        </div>
+        <div class="split-text">
+            <p>
+                Lilly Wellness offers a range of professional massage treatments tailored to
+                your needs, from deep relaxation to targeted muscle recovery — all delivered
+                in the comfort and privacy of your own home.
+            </p>
+        </div>
+    </div>
+    <div class="services">
+        <div class="card">
+            <h3>Relaxation Massage</h3>
+            <p>A calming treatment designed to reduce stress, ease tension, and promote overall wellbeing.</p>
+        </div>
+        <div class="card">
+            <h3>Deep Tissue Massage</h3>
+            <p>Targets deeper layers of muscle tissue to help relieve chronic tension and stiffness.</p>
+        </div>
+        <div class="card">
+            <h3>Sports Massage</h3>
+            <p>Ideal for active individuals seeking faster recovery, improved flexibility, and muscle maintenance.</p>
+        </div>
+        <div class="card">
+            <h3>Body Contouring & Anti-Cellulite Massage</h3>
+            <p>Focused techniques designed to stimulate circulation and support body contouring goals.</p>
+        </div>
+    </div>
+</section>
+<section>
+    <h2>Pricing</h2>
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>60 Minutes</th>
+            <th>90 Minutes</th>
+        </tr>
+        <tr>
+            <td>Relaxation Massage</td>
+            <td>£60</td>
+            <td>£85</td>
+        </tr>
+        <tr>
+            <td>Deep Tissue Massage</td>
+            <td>£70</td>
+            <td>£95</td>
+        </tr>
+        <tr>
+            <td>Sports Massage</td>
+            <td>£75</td>
+            <td>£100</td>
+        </tr>
+        <tr>
+            <td>Body Contouring & Anti-Cellulite Massage</td>
+            <td>£70</td>
+            <td>£95</td>
+        </tr>
+    </table>
+</section>
+<section>
+    <h2>Why Choose Lilly Wellness?</h2>
+    <div class="split-row reverse">
+        <div class="split-img">
+            <img src="lilia.jpg" alt="Lilly, your therapist">
+        </div>
+        <div class="split-text">
+            <p>
+                Lilly is a mobile massage therapist travelling directly to your home, so you
+                can enjoy professional treatment in a comfortable and familiar environment
+                without having to travel anywhere yourself.
+            </p>
+        </div>
+    </div>
+    <div class="info-box">
+        <h3>Service Area</h3>
+        <p>
+            Based in West London. Travel outside West London within London is available
+            with a £10 additional fee.
+        </p>
+    </div>
+    <div class="info-box">
+        <h3>Payment Methods</h3>
+        <p>Cash or Bank Transfer.</p>
+    </div>
+    <div class="notice-box">
+        <h3>Professional &amp; Ethical Practice</h3>
+        <p>
+            All treatments are strictly ethical and professional. Full draping is required
+            at all times, with only the area being treated uncovered.
+        </p>
+        <p>
+            Any inappropriate behaviour or requests will result in immediate termination
+            of the session, and the full fee will still be payable.
+        </p>
+    </div>
+</section>
+<section class="whatsapp-section">
+    <h2>Book Your Appointment</h2>
+    <p>
+        For enquiries and bookings, contact us directly via WhatsApp.
+    </p>
+    <a class="btn"
+       href="https://wa.me/447932060788?text=Hi%20Lilly,%20I'd%20like%20to%20enquire%20about%20a%20massage%20appointment."
+       target="_blank">
+       Message on WhatsApp
+    </a>
+</section>
+<footer>
+    <h3>Lilly Wellness</h3>
+    <p>Mobile Massage Services | West London</p>
+    <p>WhatsApp: 07932 060788</p>
+</footer>
+</body>
+</html>
