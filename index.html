@@ -30,7 +30,13 @@
         background-position: center;
         color: white;
         text-align: center;
-        padding: 100px 20px;
+        padding: 60px 20px 100px;
+    }
+    .logo {
+        max-width: 280px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
     }
     header h1 {
         font-size: 3rem;
@@ -168,6 +174,21 @@
         border-radius: 12px;
         margin-top: 20px;
     }
+    .offer-box {
+        background: var(--green);
+        color: white;
+        padding: 25px;
+        border-radius: 12px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .offer-box h3 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+    .offer-box p {
+        margin: 0;
+    }
     footer {
         background: var(--green);
         color: white;
@@ -187,10 +208,10 @@
 </head>
 <body>
 <header>
-    <h1>Lilly Wellness</h1>
+    <img src="lilly-wellness-logo.png" alt="Lilly Wellness logo" class="logo">
     <p>
         Professional mobile massage services in West London.
-        Relax, recover, and restore your wellbeing from the comfort and safety of your own home.
+        Relax, recover, and restore your wellbeing from the comfort of your own home.
     </p>
     <a class="btn"
        href="https://wa.me/447932060788?text=Hi%20Lilly,%20I'd%20like%20to%20enquire%20about%20a%20massage%20appointment."
@@ -203,7 +224,8 @@
     <div class="intro-text">
         <p>
             Lilly Wellness offers a range of professional massage treatments tailored to
-            your needs, from deep relaxation to targeted muscle recovery.
+            your needs, from deep relaxation to targeted muscle recovery — all delivered
+            in the comfort and privacy of your own home.
         </p>
     </div>
     <div class="split-row">
@@ -221,8 +243,8 @@
                     <p>Targets deeper layers of muscle tissue to help relieve chronic tension and stiffness.</p>
                 </div>
                 <div class="card">
-                    <h3>Sports Massage</h3>
-                    <p>Ideal for active individuals seeking faster recovery, improved flexibility, and muscle maintenance.</p>
+                    <h3>Aromatherapy Massage</h3>
+                    <p>A soothing full-body massage using essential oils to ease stress, lift your mood, and deepen relaxation.</p>
                 </div>
                 <div class="card">
                     <h3>Body Contouring & Anti-Cellulite Massage</h3>
@@ -246,26 +268,31 @@
             <table>
                 <tr>
                     <th>Service</th>
+                    <th>45 Minutes</th>
                     <th>60 Minutes</th>
                     <th>90 Minutes</th>
                 </tr>
                 <tr>
                     <td>Relaxation Massage</td>
+                    <td>£50</td>
                     <td>£60</td>
                     <td>£85</td>
                 </tr>
                 <tr>
                     <td>Deep Tissue Massage</td>
+                    <td>£60</td>
                     <td>£70</td>
                     <td>£95</td>
                 </tr>
                 <tr>
-                    <td>Sports Massage</td>
-                    <td>£75</td>
-                    <td>£100</td>
+                    <td>Aromatherapy Massage</td>
+                    <td>£55</td>
+                    <td>£65</td>
+                    <td>£90</td>
                 </tr>
                 <tr>
                     <td>Body Contouring & Anti-Cellulite Massage</td>
+                    <td>£60</td>
                     <td>£70</td>
                     <td>£95</td>
                 </tr>
@@ -285,6 +312,10 @@
     <div class="info-box">
         <h3>Payment Methods</h3>
         <p>Cash or Bank Transfer.</p>
+    </div>
+    <div class="offer-box">
+        <h3>Loyalty Package</h3>
+        <p>Book 5 sessions and get your 6th session free.</p>
     </div>
     <div class="notice-box">
         <h3>Professional &amp; Ethical Practice</h3>
