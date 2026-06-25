@@ -161,6 +161,16 @@
         border-radius: 12px;
         overflow: hidden;
     }
+    .table-scroll {
+        width: 100%;
+        overflow-x: auto;
+        border-radius: 12px;
+    }
+    @media(max-width:700px){
+        .table-scroll table {
+            min-width: 480px;
+        }
+    }
     th {
         background: var(--green);
         color: white;
@@ -267,6 +277,7 @@
     </div>
     <div class="split-row">
         <div class="split-content">
+            <div class="table-scroll">
             <table>
                 <tr>
                     <th>Service</th>
@@ -299,6 +310,7 @@
                     <td>£95</td>
                 </tr>
             </table>
+            </div>
         </div>
         <div class="split-img">
             <img src="lilia.jpg" alt="Lilly, your therapist">
