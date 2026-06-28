@@ -25,7 +25,7 @@
     }
     header {
         background:
-            radial-gradient(ellipse 320px 160px at 50% 70px, rgba(248,245,239,0.55), rgba(248,245,239,0) 70%),
+            radial-gradient(ellipse 380px 200px at 50% 80px, rgba(248,245,239,0.85), rgba(248,245,239,0) 75%),
             linear-gradient(rgba(111,138,111,0.55), rgba(111,138,111,0.55)),
             url('header-bg.jpg');
         background-size: cover;
@@ -58,6 +58,17 @@
         padding: 14px 28px;
         border-radius: 30px;
         font-weight: bold;
+    }
+    .btn-secondary {
+        display: inline-block;
+        margin-top: 12px;
+        background: transparent;
+        color: var(--green);
+        text-decoration: none;
+        padding: 12px 26px;
+        border-radius: 30px;
+        font-weight: bold;
+        border: 2px solid var(--green);
     }
     section {
         padding: 70px 20px;
@@ -170,11 +181,6 @@
         overflow-x: auto;
         border-radius: 12px;
     }
-    @media(max-width:700px){
-        .table-scroll table {
-            min-width: 480px;
-        }
-    }
     th {
         background: var(--green);
         color: white;
@@ -183,6 +189,25 @@
         padding: 15px;
         border-bottom: 1px solid #eee;
         text-align: center;
+    }
+    td:first-child, th:first-child {
+        text-align: left;
+        max-width: 110px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+    @media(max-width:700px){
+        .table-scroll table {
+            min-width: 340px;
+        }
+        td:first-child, th:first-child {
+            max-width: 75px;
+            font-size: 0.8rem;
+        }
+        th, td {
+            padding: 8px 5px;
+            font-size: 0.8rem;
+        }
     }
     .info-box {
         background: white;
@@ -204,6 +229,46 @@
     }
     .offer-box p {
         margin: 0;
+    }
+    .faq-item {
+        background: white;
+        border-radius: 12px;
+        margin-bottom: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        overflow: hidden;
+    }
+    .faq-item summary {
+        padding: 18px 22px;
+        font-weight: bold;
+        color: var(--green);
+        cursor: pointer;
+        list-style: none;
+        position: relative;
+    }
+    .faq-item summary::-webkit-details-marker {
+        display: none;
+    }
+    .faq-item summary::after {
+        content: '+';
+        position: absolute;
+        right: 22px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.4rem;
+        color: var(--green);
+    }
+    .faq-item[open] summary::after {
+        content: '−';
+    }
+    .faq-item p {
+        padding: 0 22px;
+        margin: 0 0 10px;
+    }
+    .faq-item p:first-of-type {
+        margin-top: 2px;
+    }
+    .faq-item p:last-of-type {
+        margin-bottom: 18px;
     }
     footer {
         background: var(--green);
@@ -285,9 +350,9 @@
             <table>
                 <tr>
                     <th>Service</th>
-                    <th>45 Minutes</th>
-                    <th>60 Minutes</th>
-                    <th>90 Minutes</th>
+                    <th>45 min</th>
+                    <th>60 min</th>
+                    <th>90 min</th>
                 </tr>
                 <tr>
                     <td>Relaxation Massage</td>
@@ -347,6 +412,47 @@
         </p>
     </div>
 </section>
+<section>
+    <h2>Frequently Asked Questions</h2>
+    <details class="faq-item">
+        <summary>What areas do you cover?</summary>
+        <p>Lilly Wellness is based in West London and travels directly to your home. Travel outside West London within London is available for a £10 additional fee.</p>
+    </details>
+    <details class="faq-item">
+        <summary>What does Lilly bring, and what do I need to provide?</summary>
+        <p>Your massage therapist brings a portable massage table and all the oils needed for your treatment. Towels are not provided, so please have the following ready for your session:</p>
+        <p>• 2 large bath towels – one to cover the body and one to cover or support areas as the therapist works.</p>
+        <p>• 1 hand towel – for extra support (e.g. under the forehead, ankles, or knees) or to wipe off excess oil if needed.</p>
+    </details>
+    <details class="faq-item">
+        <summary>What should I wear, and is there privacy to undress?</summary>
+        <p>You'll be given privacy to undress to your comfort level before the session begins. Most clients undress to their underwear, and full draping is used throughout so only the area being treated is uncovered.</p>
+    </details>
+    <details class="faq-item">
+        <summary>How much space do I need at home?</summary>
+        <p>You'll just need a quiet, clutter-free space large enough to fit a massage table — most living rooms or bedrooms work well.</p>
+    </details>
+    <details class="faq-item">
+        <summary>What should I expect during my first session?</summary>
+        <p>You'll be asked about any areas of tension, injuries, or preferences so your treatment can be tailored specifically to you.</p>
+    </details>
+    <details class="faq-item">
+        <summary>How do I book an appointment?</summary>
+        <p>The easiest way to book is via WhatsApp. Just tap the "Book via WhatsApp" button on this page and send your preferred date, time, and treatment.</p>
+    </details>
+    <details class="faq-item">
+        <summary>What payment methods do you accept?</summary>
+        <p>Cash or bank transfer are both accepted at the time of your session.</p>
+    </details>
+    <details class="faq-item">
+        <summary>Do you offer any discounts for regular bookings?</summary>
+        <p>Yes — book 5 sessions and your 6th session is free as part of our loyalty package.</p>
+    </details>
+    <details class="faq-item">
+        <summary>What is your cancellation policy?</summary>
+        <p>Please get in touch via WhatsApp as soon as possible if you need to reschedule or cancel, so we can offer the appointment time to another client.</p>
+    </details>
+</section>
 <section class="whatsapp-section">
     <h2>Book Your Appointment</h2>
     <p>
@@ -356,6 +462,12 @@
        href="https://wa.me/447716362370?text=Hi%20Lilly,%20I'd%20like%20to%20enquire%20about%20a%20massage%20appointment."
        target="_blank">
        Message on WhatsApp
+    </a>
+    <br>
+    <a class="btn-secondary"
+       href="https://www.jotform.com/sign/261786282381061/invite/01kw7ybkws1232c20c5c85a897"
+       target="_blank">
+       Complete Health Questionnaire
     </a>
 </section>
 <footer>
