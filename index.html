@@ -186,28 +186,30 @@
         color: white;
     }
     th, td {
-        padding: 15px;
+        padding: 12px 8px;
         border-bottom: 1px solid #eee;
         text-align: center;
     }
     td:first-child, th:first-child {
         text-align: left;
-        max-width: 110px;
+        max-width: 100px;
         word-wrap: break-word;
         white-space: normal;
-        padding-left: 12px;
+        padding-left: 30px;
+        padding-right: 8px;
     }
     @media(max-width:700px){
         .table-scroll table {
             min-width: 340px;
         }
         td:first-child, th:first-child {
-            max-width: 75px;
-            font-size: 0.8rem;
+            max-width: 80px;
+            font-size: 0.9rem;
+            padding-left: 20px;
         }
         th, td {
-            padding: 8px 5px;
-            font-size: 0.8rem;
+            padding: 10px 6px;
+            font-size: 0.9rem;
         }
     }
     .info-box {
@@ -349,6 +351,12 @@
         <div class="split-content">
             <div class="table-scroll">
             <table>
+                <colgroup>
+                    <col style="width: 46%">
+                    <col style="width: 18%">
+                    <col style="width: 18%">
+                    <col style="width: 18%">
+                </colgroup>
                 <tr>
                     <th>Service</th>
                     <th>45 min</th>
